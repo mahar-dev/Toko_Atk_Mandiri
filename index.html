@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Alat Tulis Mandiri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Bagian Header & Kontak WhatsApp -->
+  <header>
+    <div>
+      <h1>Toko ATK Mandiri</h1>
+      <p style="margin: 5px 0 0 0; font-size: 0.9em;">📞 CS / WhatsApp: <a href="https://wa.me/6285219951294" target="_blank" style="color: #ffde59; text-decoration: none;">0852-1995-1294</a></p>
+    </div>
+    <div class="keranjang-info">
+      Keranjang: <span id="jumlah-item">0</span> item | Total: Rp <span id="total-harga">0</span>
+    </div>
+  </header>
+
+  <!-- Bagian Katalog Produk -->
+  <main>
+    <h2>Katalog Produk</h2>
+    <div id="daftar-produk" class="grid-produk"></div>
+
+    <!-- Bagian Keranjang & Tombol Pesan -->
+    <section class="kotak-checkout">
+      <h3>Rincian Belanja Anda</h3>
+      <ul id="list-keranjang"></ul>
+      <button onclick="checkout()" class="btn-beli">Pesan Sekarang via WhatsApp</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
