@@ -66,7 +66,7 @@ function hapusItem(index) {
   updateTampilanKeranjang();
 }
 
-// Checkout Otomatis ke WhatsApp Penjual (Nomor Anda: 6285893591672)
+// Checkout Otomatis ke WhatsApp Penjual (Nomor Anda: 6285219951294)
 function checkout() {
   if (keranjang.length === 0) {
     alert("Keranjang masih kosong!");
@@ -83,7 +83,7 @@ function checkout() {
 
   pesan += `%0ATotal Pembayaran: Rp ${total.toLocaleString("id-ID")}%0ATerima kasih!`;
 
-  const nomorWhatsApp = "6285893591672"; 
+  const nomorWhatsApp = "6285219951294"; 
   
   window.open(`https://wa.me/${nomorWhatsApp}?text=${pesan}`, "_blank");
 }
